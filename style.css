@@ -1,0 +1,204 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  background-color: #d4d804;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+header ul li a:hover {
+  background-color: white;
+  text-decoration: none;
+  color: #d4d804;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid #d4d804;
+  border-radius: 6px;
+}
+
+header div {
+  padding: 4rem 0;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+header h2 {
+  padding-top: 0.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+button {
+  display: flex;
+  color: black;
+  background-color: white;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+button:hover {
+  color: #d4d804;
+  border: 1px solid #d4d804;
+}
+
+#add-item-button-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.add-item-button {
+  color: black;
+  background-color: #d4d804;
+  border: 1px solid white;
+  border-radius: 6px;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  text-decoration: none;
+}
+
+.add-item-button:hover {
+  background-color: white;
+  color: #d4d804;
+  border: 1px solid #d4d804;
+}
+
+.selected {
+  background-color: #03d3b2;
+  color: white;
+  border: 1px solid white;
+}
+
+.selected:hover {
+  background-color: white;
+  color: #03d3b2;
+  border: 1px solid #03d3b2;
+}
+
+#items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-card {
+  width: 16rem;
+  flex-wrap: wrap;
+  border: 1px solid whitesmoke;
+  box-shadow: 6px 6px 4px whitesmoke;
+  height: auto;
+}
+
+.item-card img {
+  width: 100%;
+  height: auto;
+}
+
+.item-card h1 {
+  margin: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.item-card h2 {
+  margin: 2rem 1rem 0.4rem 1rem;
+}
+
+.item-card p {
+  margin: 0 1rem 2rem 1rem;
+}
+
+#add-item-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+#add-item-form {
+  width: 10rem;
+}
+
+#add-item-form label {
+  font-weight: bold;
+}
+
+#add-item-form input {
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+#add-item-form select {
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+}
+
+#add-item-form button {
+  width: 10rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header ul {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  header ul li {
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+  .item-card {
+    width: 100%;
+  }
+}
